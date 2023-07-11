@@ -16,8 +16,6 @@ const useGetCountries = ({ name, population, sortName, pagination }) => {
       const sortedByNameData = utils.countries.sortByCountryName(filteredByPopulationData, sortName);
       const paginatedData = utils.countries.paginateCountries(sortedByNameData, pagination);
 
-      console.log('paginatedData', paginatedData);
-
       setCountries(paginatedData);
     } catch (e) {
       console.log(e);
