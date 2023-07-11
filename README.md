@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Project description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project is a simple web application where you can pass some params to filter/sort countries retrieved from the public API. The user is able to see a final result on a screen.
 
-## Available Scripts
+The project aim is to understand the average development speed with and without AI tools. This repository code was submitted without help of any AI tools from a Senior level developer. The same project was developed with the help of AI tools and submitted to another repository.
 
-In the project directory, you can run:
+## How to run the project
 
-### `npm start`
+1. `npm i`
+2. `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to run the tests
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. `npm test`
 
-### `npm test`
+## Examples of using the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Send the request without touching the form - you'll see the result with default values.
+2. Change the country population to 1 - you will be able to see top 20 countries with the smallest population.
+3. Change the country population to 1000 and paginate to 5 - you will see top 5 countries with the largest population.
+4. Change the country population to 1000 and paginate to 5 and put sort by 'descend' - you will see top 5 countries with the largest population sorted by name reversed.
+5. Change the sort by from 'ascend' to 'descend' - you will see the list from the end.
+6. Enter some part of country name - you will see only matched countries.
+7. Enter the full country name - you will see only one country.
+8. Enter the paginate to 100 - you will see 100 countries or less (if the condition is not met).
+9. Enter the paginate to 0 - you will see 0 countries.
+10. Enter the paginate to negative value - you will see browser validation.
