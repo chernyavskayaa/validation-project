@@ -10,4 +10,13 @@ export const filterByCountryPopulation = (countries, populationInMillions) => {
   return countries.filter((country) => country.population <= population);
 };
 
-export const countries = { filterByName, filterByCountryPopulation };
+const sortMapping = {
+  ascend: (a, b) => a.name.common.localeCompare(b.name.common),
+  descend: (a, b) => b.name.common.localeCompare(a.name.common),
+};
+
+export const sortByCountryName = (countries, sortDirection = 'ascend') => {
+  return countries.sort(sortMapping[sortDirection]);
+};
+
+export const countries = { filterByName, filterByCountryPopulation, sortByCountryName };
