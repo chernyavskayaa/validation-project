@@ -19,4 +19,8 @@ export const sortByCountryName = (countries, sortDirection = 'ascend') => {
   return countries.sort(sortMapping[sortDirection]);
 };
 
-export const countries = { filterByName, filterByCountryPopulation, sortByCountryName };
+export const paginateCountries = (countries, itemsPerPage) => {
+  return countries.slice(0, itemsPerPage);
+};
+
+export const countries = { filterByName, filterByCountryPopulation, sortByCountryName, paginateCountries };
